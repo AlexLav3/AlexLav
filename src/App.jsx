@@ -13,8 +13,10 @@ const App = () => {
     <div className="min-h-screen bg-background text-foreground font-sans">
      <Navbar />
      <Home />
-     <About />
-     <Explore />
+     <section className="flex flex-col md:flex-row">
+      <About />
+      <Explore />
+    </section>
      <Contacts />
      <Footer />
     </div>

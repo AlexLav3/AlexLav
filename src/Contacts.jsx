@@ -2,20 +2,28 @@ import React from "react";
 
 
 const Contacts = () => (
+   <section id="Contact" className="flex flex-col items-center justify-center text-center px-12 py-12 mb-10">
+    <h1 className="text-3xl font-extrabold text-accent mb-10">Contact me</h1>
+    <section className="flex justify-center items-center gap-6"> 
     <Git />
+    <Linkedin />
+    <Gmail />
+    </section>
+  </section>
 ); 
 
 const Git =() =>(
-    <section class="flex justify-center items-center">
-      <button
-        class="group flex justify-center p-2 rounded-md drop-shadow-xl bg-gradient-to-r from-gray-800 to-black text-white font-semibold hover:translate-y-3 hover:rounded-[50%] transition-all duration-500 hover:from-[#331029] hover:to-[#310413]"
-        href="/"
+      <a
+        href="https://github.com/AlexLav3"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="group flex justify-center p-4 rounded-md drop-shadow-xl bg-gradient-to-t from-gray-800 to-black text-white font-semibold hover:translate-y-3 hover:rounded-[50%] transition-all duration-500 hover:from-[#1a1a2e] hover:to-purple-400"
       > 
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
         viewBox="0 0 15 15"
-        class="w-5"
+        class="w-8"
       >
       <path
         clip-rule="evenodd"
@@ -25,13 +33,54 @@ const Git =() =>(
       ></path>
       </svg>
       <span
-        class="absolute opacity-0 group-hover:opacity-100 group-hover:text-gray-700 group-hover:text-sm group-hover:-translate-y-10 duration-700"
-      >
+        class="absolute text-cyan-400 opacity-0 group-hover:opacity-100 group-hover:text-cyan-100 group-hover:text-1xl group-hover:-translate-y-10 duration-700">
         GitHub
       </span>
-      </button>
-    </section>
+      </a>
+);
 
+const Linkedin = () => (
+
+    <a
+      href="https://www.linkedin.com/in/elena-lavricheva-77679a227/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="group flex justify-center items-center p-4 rounded-md drop-shadow-xl bg-gradient-to-t from-gray-800 to-black text-white font-semibold hover:translate-y-3 hover:rounded-[50%] transition-all duration-500 hover:from-white-60 hover:to-[#0A66C2]"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        className="w-8 h-8 text-white group-hover:text-white transition-colors duration-300"
+        fill="currentColor"
+      >
+        <path d="M19 0h-14c-2.762 0-5 2.238-5 5v14c0 2.762 2.238 5 5 5h14c2.762 0 5-2.238 5-5v-14c0-2.762-2.238-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.784 1.764-1.75 1.764zm13.5 11.268h-3v-5.604c0-1.337-.025-3.06-1.867-3.06-1.869 0-2.156 1.46-2.156 2.965v5.699h-3v-10h2.881v1.367h.041c.401-.758 1.379-1.56 2.839-1.56 3.034 0 3.595 1.997 3.595 4.59v5.603z"/>
+      </svg>
+      <span className="absolute text-cyan-400 opacity-0 group-hover:opacity-100 group-hover:text-cyan-100 group-hover:text-1xl group-hover:-translate-y-11 duration-700">
+        LinkedIn
+      </span>
+    </a>
+);
+
+
+const Gmail = () => (
+  <section className="flex justify-center items-center">
+    <a
+      href="alexlav.elly@gmail.com"
+      className="group flex justify-center items-center p-4 rounded-md drop-shadow-xl bg-gradient-to-t from-gray-800 to-black text-white font-semibold hover:translate-y-3 hover:rounded-[50%] transition-all duration-500 hover:to-[#00ffff] hover:from-white-600"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 512 512"
+        className="w-8 h-8 text-white group-hover:text-white transition-colors duration-300"
+        fill="currentColor"
+      >
+        <path d="M502.3 190.8L327.4 338.5 502.3 482c6.7-8 9.7-18.4 9.7-28.6V219.4c0-11.4-3.8-21.8-9.7-28.6zM256 344.2L474.1 158.6c-3.8-4.3-8.3-8-13.3-11L256 300.7 51.2 147.6c-5 3-9.5 6.7-13.3 11L256 344.2zm-45.4-5.7L9.7 190.8C3.8 197.6 0 208 0 219.4v234c0 10.2 3 20.6 9.7 28.6l201.4-173.5zM507.8 113c-3.8-4.3-8.3-8-13.3-11L256 272.5 17.5 102C12.5 105 8 108.7 4.2 113L256 338.5 507.8 113z"/>
+      </svg>
+      <span className="absolute text-cyan-400 opacity-0 group-hover:opacity-100 group-hover:text-cyan-100 group-hover:text-1xl group-hover:-translate-y-11 duration-700">
+        Gmail
+      </span>
+    </a>
+  </section>
 );
 
 export default Contacts;

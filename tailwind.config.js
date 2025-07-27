@@ -10,7 +10,7 @@ export default {
         background: "#0f0f1c",       // Dark sci-fi background
         foreground: "#e0e0ff",       // Pale blue-gray text
         accent: "#00ffff",           // Cyan glow
-        highlight: "#ff00ff",        // Magenta highlight
+        highlight: "#8f1b8fff",        // Magenta highlight
         box: "#1a1a2e",              // Darker box background
       },
       boxShadow: {
@@ -20,3 +20,4 @@ export default {
   },
   plugins: [],
 }
+//
