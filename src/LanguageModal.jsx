@@ -8,12 +8,45 @@ const projectsByLanguage = {
       github: 'https://github.com/AlexLav3/meta_extra',
     },
     {
-      name: 'Another C Project',
-      description: 'Description here...',
-      github: 'https://github.com/example/c-project',
+      name: 'So long',
+      description: 'Mini 2D game made with minilibx, 42 project.',
+      github: 'https://github.com/AlexLav3/so_long',
+    },
+    {
+      name: 'Philosophers',
+      description: 'This project is a simulation of the classic Dining Philosophers problem, a concurrency challenge. Each philosopher is a thread and must follow rules around eating, thinking, and not dying.',
+      github: 'https://github.com/AlexLav3/philo',
+    },
+    {
+      name: 'Push Swap',
+      description: 'This is a sorting algorithm challenge from 42 school. The goal is to sort a stack of integers using only a limited set of stack operations, using as few moves as possible.',
+      github: 'https://github.com/AlexLav3/push_swap',
     },
   ],
-  // add other languages here...
+   Cpp: [
+    {
+      name: 'SFML WIP Mini game',
+      description: 'Cpp mini game using SFML',
+      github: 'https://github.com/AlexLav3/SFML',
+    },
+    {
+      name: 'TicTacToe',
+      description: 'TicTacToe in C++',
+      github: 'https://github.com/AlexLav3/TIcTacToe',
+    },
+  ],
+  UnrealEngine: [
+    {
+      name: 'Fox Game',
+      description: 'My own game project! Still in development. Jumping animation done by me, has mechanics on objects appearing after interacting with them, general movement, stamina bar w its regeration, animals with AI behavioral trees. The 3D models were found for free online.',
+      github: 'https://github.com/AlexLav3/Rpg',
+    },
+    {
+      name: 'Pac Man 3D',
+      description: 'PacMan made in 3D with unreal Engine, mostly for learning AI behaviour in Unreal,vectors manipulation and path-finding for the ghosts(cubes), not the best graphics, I\'m not a 3D models creator',
+      github: 'https://github.com/AlexLav3/PacManPRoject',
+    },
+  ],
 };
 
 const LanguageModal = ({ language, onClose, onProjectSelect }) => {

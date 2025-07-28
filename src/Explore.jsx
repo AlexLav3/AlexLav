@@ -6,7 +6,7 @@ const Explore = ({ onProjectSelect, onLanguageSelect }) => (
   <div className="w-full md:w-1/2 flex justify-center items-center p-6">
     <div className="bg-rectangle w-full border-t border-l border-b border-cyan-400 rounded-tl-2xl rounded-bl-2xl p-6">
       <h3 className="text-2xl font-semibold text-accent mb-2">Explore Projects</h3>
-      <p className="mb-4">Dive into my portfolio.</p>
+      <p className="mb-4">Dive into my portfolio. Not all projects ever did included.</p>
 
       <section className="flex justify-center items-center gap-6"> 
       <CLanguage onSelect={onLanguageSelect} />
@@ -51,7 +51,7 @@ const CppLanguage = ({ onSelect }) => {
 const Unreal = ({ onSelect }) => {
   return (
     <div
-      onClick={() => onSelect('Unreal Engine')}
+      onClick={() => onSelect('UnrealEngine')}
       className="relative group w-[100px] h-[100px] flex items-center justify-center cursor-pointer hover:scale-105 transition"
     >
       <div className="z-10 rounded-full border-4 border-cyan-400 text-cyan-400 flex flex-col items-center justify-center w-full h-full text-[14px] font-black tracking-wider font-mono text-center leading-tight">

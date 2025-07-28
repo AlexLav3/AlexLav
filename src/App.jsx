@@ -29,7 +29,6 @@ const App = () => {
       <Navbar />
       <Home />
       <section className="flex flex-col md:flex-row">
-        <About />
         <Explore onLanguageSelect={setSelectedLanguage} />
       </section>
       <Contacts />
