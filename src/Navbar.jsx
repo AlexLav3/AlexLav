@@ -5,7 +5,6 @@ const Navbar = () => (
     <h1 className="text-accent text-2xl font-bold tracking-wide">AlexLav</h1>
     <nav className="flex space-x-6">
       <a href="#home" className="hover:text-accent transition">Home</a>
-      <a href="#about" className="hover:text-accent transition">About Me</a>
       <a href="#contact" className="hover:text-accent transition">Contact</a>
     </nav>
   </header>

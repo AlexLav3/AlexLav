@@ -4,15 +4,28 @@ import ProjectModal from "./ProjectModal";
 
 const Explore = ({ onProjectSelect, onLanguageSelect }) => (
   <div className="w-full md:w-1/2 flex justify-center items-center p-6">
-    <div className="bg-rectangle w-full border-t border-l border-b border-cyan-400 rounded-tl-2xl rounded-bl-2xl p-6">
+    <div className="bg-rectangle w-full border-t border-l border-b border-cyan-400 rounded-tl-2xl rounded-bl-2xl p-6 relative overflow-hidden">
       <h3 className="text-2xl font-semibold text-accent mb-2">Explore Projects</h3>
       <p className="mb-4">Dive into my portfolio. Not all projects ever did included.</p>
 
-      <section className="flex justify-center items-center gap-6"> 
-      <CLanguage onSelect={onLanguageSelect} />
-      <CppLanguage onSelect={onLanguageSelect} />
-      <Unreal onSelect={onLanguageSelect} />
-      </section>
+      {/* Background image with fade effect */}
+      <div className="relative w-full h-60">
+        <img
+          src="/images/image2.jpg"
+          alt="Background"
+          className="w-full h-full object-cover absolute top-0 left-0 z-0"
+        />
+        <div className="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-rectangle to-transparent z-10" />
+        
+        {/* Language selection overlayed on top of image */}
+        <div className="absolute inset-0 z-20 flex justify-center items-center">
+          <div className="backdrop-blur-sm bg-black/30 p-4 rounded-xl flex gap-6">
+            <CLanguage onSelect={onLanguageSelect} />
+            <CppLanguage onSelect={onLanguageSelect} />
+            <Unreal onSelect={onLanguageSelect} />
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 );

@@ -1,4 +1,5 @@
 import React from "react";
+import styled from 'styled-components';
 
 const Contacts = () => (
    <section id="Contact" className="flex flex-col items-center justify-center text-center px-12 py-12 mb-10">
@@ -8,6 +9,7 @@ const Contacts = () => (
     <Linkedin />
     <Gmail />
     </section>
+    <Form />
   </section>
 ); 
 
@@ -81,5 +83,78 @@ const Gmail = () => (
     </a>
   </section>
 );
+
+const Form = () => {
+  return (
+    <StyledWrapper>
+      <form action="https://formspree.io/f/xovlwnpk" 
+        method="POST" 
+        className="colorful-form">
+        <div className="form-group">
+          <label className="form-label" htmlFor="name">Name:</label>
+          <input required placeholder="Enter your name" className="form-input" type="text" />
+        </div>
+        <div className="form-group">
+          <label className="form-label" htmlFor="email">Email:</label>
+          <input required placeholder="Enter your email" className="form-input" name="email" id="email" type="email" />
+        </div>
+        <div className="form-group">
+          <label className="form-label" htmlFor="message">Message:</label>
+          <textarea required placeholder="Enter your message" className="form-input" name="message" id="message" defaultValue={""} />
+        </div>
+        <button className="form-button" type="submit">Submit</button>
+      </form>
+    </StyledWrapper>
+  );
+}
+
+const StyledWrapper = styled.div`
+  .colorful-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #0f0f1c;
+    border-radius: 10px;
+  }
+
+  .form-group {
+    margin-bottom: 20px;
+  }
+
+  .form-label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #e0e0ff;
+  }
+
+  .form-input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #fff;
+    color: #333;
+    border-radius: 5px;
+  }
+
+  textarea.form-input {
+    height: 100px;
+  }
+
+  .form-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #00ffff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .form-button:hover {
+    background-color: #00ffff;
+  }`;
 
 export default Contacts;
