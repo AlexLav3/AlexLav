@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ProjectModal = ({ project, onClose }) => {
+const ProjectModal = ({ project, onClose, onBack }) => {
   return (
     <div className="fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center z-50">
       <div className="bg-white dark:bg-gray-900 rounded-lg p-6 max-w-md w-full shadow-lg">
@@ -14,12 +14,15 @@ const ProjectModal = ({ project, onClose }) => {
         >
           View on GitHub
         </a>
-        <button
-          onClick={onClose}
-          className="block mt-4 text-sm text-gray-400 hover:text-white"
-        >
-          Close
-        </button>
+
+        <div className="mt-4 flex justify-between text-sm text-gray-400">
+          <button onClick={onBack} className="hover:text-white">
+            ← Back
+          </button>
+          <button onClick={onClose} className="hover:text-white">
+            Close
+          </button>
+        </div>
       </div>
     </div>
   );

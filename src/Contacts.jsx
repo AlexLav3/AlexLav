@@ -1,6 +1,5 @@
 import React from "react";
 
-
 const Contacts = () => (
    <section id="Contact" className="flex flex-col items-center justify-center text-center px-12 py-12 mb-10">
     <h1 className="text-3xl font-extrabold text-accent mb-10">Contact me</h1>
