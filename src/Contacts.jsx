@@ -65,7 +65,7 @@ const Linkedin = () => (
 const Gmail = () => (
   <section className="flex justify-center items-center">
     <a
-      href="alexlav.elly@gmail.com"
+      href="mailto:alexlavrich03@gmail.com"
       className="group flex justify-center items-center p-4 rounded-md drop-shadow-xl bg-gradient-to-t from-gray-800 to-black text-white font-semibold hover:translate-y-3 hover:rounded-[50%] transition-all duration-500 hover:to-[#00ffff] hover:from-white-600"
     >
       <svg
