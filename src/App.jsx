@@ -13,7 +13,10 @@ const App = () => {
   const [selectedProject, setSelectedProject] = useState(null);
 
   const closeLanguageModal = () => setSelectedLanguage(null);
-  const closeProjectModal = () => setSelectedProject(null);
+  const closeProjectModal = () => {
+    setSelectedProject(null);
+    setSelectedLanguage(null);
+  }
 
   const handleProjectSelect = (proj) => {
     setSelectedProject(proj);
