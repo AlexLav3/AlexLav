@@ -16,7 +16,7 @@ const Studies = () => (
     <div className="absolute inset-6 top-[200px] flex flex-wrap justify-center gap-3 px-5">
       <p className="p-6 text-2xl text-accent">
         42Prague
-        <div className="text-[0.95rem] text-foreground mt-2">  coding institute, projects about C, C++, Software dev, Linux,  </div>
+        <div className="text-[0.95rem] text-foreground mt-2"> coding institute, projects about C, C++, Software dev, Linux,  </div>
       </p>
       <div className="p-5 text-2xl text-accent">
         CodeAcademy
@@ -24,7 +24,7 @@ const Studies = () => (
       </div>
       <div className="p-0.5 mt-0 text-2xl text-accent">
         Structure and Interpretation of Computer Programs
-        <div className="text-[0.95rem] text-foreground mt-1">teaches fundamental principles of computer programming, including recursion, abstraction, modularity, and more.</div>
+        <div className="text-[0.95rem] text-foreground mt-1">MIT book, teaches fundamental principles of computer programming, including recursion, abstraction, modularity, and more.</div>
       </div>
       <p className="p-1 text-2xl text-accent">Tom Looman
         <div className="text-[0.95rem] text-foreground mt-1">  Intermediate/Advanced Unreal Engine focusing on C++</div>
