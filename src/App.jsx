@@ -7,6 +7,7 @@ import Footer from './Footer';
 import Contacts from './Contacts';
 import ProjectModal from './ProjectModal';
 import LanguageModal from './LanguageModal';
+import Studies from './Studies';
 
 const App = () => {
   const [selectedLanguage, setSelectedLanguage] = useState(null);
@@ -35,6 +36,7 @@ const App = () => {
         <About />
         <Explore onLanguageSelect={setSelectedLanguage} />
       </section>
+      <Studies />
       <Contacts />
       <Footer />
 
