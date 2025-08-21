@@ -44,7 +44,7 @@ const Studies = () => (
     <div className="p-3 md:p-5 text-2xl text-accent">
       Coursera
       <div className="text-[0.85rem] md:text-[0.95rem] text-foreground mt-2">
-        Platform with university courses, personally I took the Data Science from Duke University, and Cybersecurity from Maryland
+        University courses, Data Science from Duke University, and Cybersecurity from Maryland
       </div>
     </div>
   </div>

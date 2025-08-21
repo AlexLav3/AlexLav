@@ -18,8 +18,8 @@ const Explore = ({ onProjectSelect, onLanguageSelect }) => (
         <div className="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-rectangle to-transparent z-10" />
         
         {/* Language selection overlayed on top of image */}
-        <div className="absolute inset-0 z-20 flex justify-center items-center">
-          <div className="backdrop-blur-sm bg-black/30 p-4 rounded-xl flex gap-6">
+        <div className="absolute inset-0 z-20 flex justify-center items-center ">
+          <div className="backdrop-blur-sm bg-black/30 p-4 rounded-xl flex gap-6 ">
             <CLanguage onSelect={onLanguageSelect} />
             <CppLanguage onSelect={onLanguageSelect} />
             <Unreal onSelect={onLanguageSelect} />
