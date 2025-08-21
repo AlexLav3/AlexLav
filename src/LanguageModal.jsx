@@ -4,28 +4,32 @@ const projectsByLanguage = {
   C: [
     {
       name: 'MetaData Extractor',
+      img: "/images/metaextr.png",
       description: 'C program that extracts EXIF metadata (camera make, model, and GPS coordinates) directly from JPEG files, no third-party or platform-specific libraries required. Uses only standard C library functions (fopen, printf, etc.) and processes files as raw byte buffers.',
       github: 'https://github.com/AlexLav3/meta_extra',
     },
     {
       name: 'So long',
+      img: "/gifs/solong.gif",
       description: 'Mini 2D game made with minilibx, 42 project.',
       github: 'https://github.com/AlexLav3/so_long',
     },
     {
       name: 'Philosophers',
+      img: "/gifs/philos.gif",
       description: 'This project is a simulation of the classic Dining Philosophers problem, a concurrency challenge. Each philosopher is a thread and must follow rules around eating, thinking, and not dying.',
       github: 'https://github.com/AlexLav3/philo',
     },
     {
-      name: 'Push Swap',
+      name: 'Push Swap', 
+      img: "/gifs/push_swap.gif",
       description: 'This is a sorting algorithm challenge from 42 school. The goal is to sort a stack of integers using only a limited set of stack operations, using as few moves as possible.',
       github: 'https://github.com/AlexLav3/push_swap',
     },
   ],
    Cpp: [
     {
-      name: 'SFML WIP Mini game',
+      name: 'SFML WIP Mini wolf game',
       description: 'Cpp mini game using SFML',
       github: 'https://github.com/AlexLav3/SFML',
     },

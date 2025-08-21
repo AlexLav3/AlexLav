@@ -4,7 +4,7 @@ import ProjectModal from "./ProjectModal";
 
 const Explore = ({ onProjectSelect, onLanguageSelect }) => (
   <div className="w-full md:w-1/2 flex justify-center items-center p-6">
-    <div className="bg-rectangle w-full border-t border-l border-b border-cyan-400 rounded-tl-2xl rounded-bl-2xl p-6 relative overflow-hidden">
+    <div className="bg-rectangle size-full border-t border-l border-b border-cyan-400 rounded-tl-2xl rounded-bl-2xl p-6 relative overflow-hidden">
       <h3 className="text-2xl md:text-s md:font-italic font-semibold text-accent mb-2">Explore Projects</h3>
       <p className="mb-4">Dive into my portfolio. Not all projects ever did included.</p>
 
