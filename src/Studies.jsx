@@ -23,7 +23,7 @@ const Studies = () => (
     <div className="p-3 md:p-5 text-2xl text-accent">
       CodeAcademy
       <div className="text-[0.85rem] md:text-[0.95rem] text-foreground mt-2">
-        C++ basics course
+        C++ course
       </div>
     </div>
 
