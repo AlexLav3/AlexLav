@@ -42,6 +42,7 @@ const projectsByLanguage = {
   UnrealEngine: [
     {
       name: 'Fox Game',
+      img: "/images/Fox_game2.png",
       description: 'My own game project! Still in development. Jumping animation done by me, has mechanics on objects appearing after interacting with them, general movement, stamina bar w its regeration, animals with AI behavioral trees. The 3D models were found for free online.',
       github: 'https://github.com/AlexLav3/Rpg',
     },
