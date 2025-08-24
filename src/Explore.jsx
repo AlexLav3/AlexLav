@@ -11,7 +11,7 @@ const Explore = ({ onProjectSelect, onLanguageSelect }) => (
       {/* Background image with fade effect */}
       <div className="relative w-full h-60">
         <img
-          src="/images/image2.jpg"
+          src="images/image2.jpg"
           alt="Background"
           className="w-full h-full object-cover absolute top-0 left-0 z-0"
         />

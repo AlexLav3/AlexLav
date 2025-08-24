@@ -4,25 +4,25 @@ const projectsByLanguage = {
   C: [
     {
       name: 'MetaData Extractor',
-      img: "/images/metaextr.png",
+      img: "images/metaextr.png",
       description: 'C program that extracts EXIF metadata (camera make, model, and GPS coordinates) directly from JPEG files, no third-party or platform-specific libraries required. Uses only standard C library functions (fopen, printf, etc.) and processes files as raw byte buffers.',
       github: 'https://github.com/AlexLav3/meta_extra',
     },
     {
       name: 'So long',
-      img: "/gifs/solong.gif",
+      img: "gifs/solong.gif",
       description: 'Mini 2D game made with minilibx, 42 project.',
       github: 'https://github.com/AlexLav3/so_long',
     },
     {
       name: 'Philosophers',
-      img: "/gifs/philos.gif",
+      img: "gifs/philos.gif",
       description: 'This project is a simulation of the classic Dining Philosophers problem, a concurrency challenge. Each philosopher is a thread and must follow rules around eating, thinking, and not dying.',
       github: 'https://github.com/AlexLav3/philo',
     },
     {
       name: 'Push Swap', 
-      img: "/gifs/push_swap.gif",
+      img: "gifs/push_swap.gif",
       description: 'This is a sorting algorithm challenge from 42 school. The goal is to sort a stack of integers using only a limited set of stack operations, using as few moves as possible.',
       github: 'https://github.com/AlexLav3/push_swap',
     },
@@ -42,8 +42,8 @@ const projectsByLanguage = {
   UnrealEngine: [
     {
       name: 'Fox Game',
-      img: "/images/Fox_game2.png",
-      description: 'My own game project! Still in development. Jumping animation done by me, has mechanics on objects appearing after interacting with them, general movement, stamina bar w its regeration, animals with AI behavioral trees. The 3D models were found for free online.',
+      img: "images/Fox_game2.png",
+      description: 'My own game project! Still in development. Jumping animation done by me, has mechanics on objects appearing after interacting with them, general movement, stamina bar with its regeration, animals with AI behavioral trees. The 3D models were found for free online.',
       github: 'https://github.com/AlexLav3/Rpg',
     },
     {
