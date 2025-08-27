@@ -59,7 +59,7 @@ const LanguageModal = ({ language, onClose, onProjectSelect }) => {
 
   return (
     <div className="fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center z-50">
-      <div className="bg-white dark:bg-gray-900 rounded-lg p-6 max-w-md w-full shadow-lg">
+      <div className="bg-background rounded-lg p-6 max-w-md w-full shadow-lg">
         <h2 className="text-xl font-bold mb-4">Projects in {language}</h2>
         <ul>
           {projects.map((proj) => (
